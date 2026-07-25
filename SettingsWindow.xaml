@@ -1,0 +1,10 @@
+<Window x:Class="Pomodorino.SettingsWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Impostazioni" Width="360" Height="330" WindowStartupLocation="CenterOwner" Background="#FFF8FC">
+  <StackPanel Margin="20">
+    <TextBlock Text="Impostazioni del ciclo" FontSize="22" Foreground="#403A5A" Margin="0,0,0,16"/>
+    <TextBlock Text="Numero di fasi"/><TextBox x:Name="PhasesBox" Margin="0,4,0,10"/>
+    <TextBlock Text="Minuti di lavoro"/><TextBox x:Name="WorkBox" Margin="0,4,0,10"/>
+    <TextBlock Text="Pausa breve (minuti)"/><TextBox x:Name="ShortBox" Margin="0,4,0,10"/>
+    <TextBlock Text="Pausa lunga (minuti)"/><TextBox x:Name="LongBox" Margin="0,4,0,12"/>
+    <Button Content="Salva" Click="Save_Click" Background="#E98FA3"/>
+  </StackPanel>
+</Window>

@@ -1,0 +1,14 @@
+<Window x:Class="Pomodorino.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Pomodorino" Width="560" Height="520" WindowStartupLocation="CenterScreen" Background="#FFF8FC">
+  <Grid Margin="24">
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+    <DockPanel><TextBlock Text="✿ Pomodorino" FontSize="30" FontWeight="Bold" Foreground="#403A5A"/><Button DockPanel.Dock="Right" Content="⚙ Impostazioni" Click="Settings_Click"/></DockPanel>
+    <Border Grid.Row="1" Margin="0,22" CornerRadius="28" Background="#EDE4FB" Padding="20"><StackPanel VerticalAlignment="Center">
+      <TextBlock x:Name="PhaseText" Text="Fase 1/4" HorizontalAlignment="Center" FontSize="25" Foreground="#403A5A"/>
+      <TextBlock x:Name="StateText" Text="Lavoro" HorizontalAlignment="Center" Margin="0,12" FontSize="20" Foreground="#B65C7A"/>
+      <TextBlock x:Name="TimeText" Text="25:00" HorizontalAlignment="Center" FontSize="82" FontWeight="Bold" Foreground="#403A5A"/>
+      <TextBlock x:Name="MessageText" Text="Concentrati e fai del tuo meglio ✨" HorizontalAlignment="Center" FontSize="16" Foreground="#665E7D"/>
+    </StackPanel></Border>
+    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"><Button x:Name="StartButton" Content="Avvia" Click="Start_Click" Background="#E98FA3"/><Button x:Name="PauseButton" Content="Pausa" Click="Pause_Click"/><Button Content="Reset" Click="Reset_Click"/></StackPanel>
+    <TextBlock Grid.Row="3" Text="Un piccolo passo alla volta 🌸" HorizontalAlignment="Center" Margin="0,20,0,0" Foreground="#8B819F"/>
+  </Grid>
+</Window>
