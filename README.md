@@ -1,4 +1,4 @@
-#Italian
+# Italian
 
 # Pomodorino
 
@@ -23,7 +23,7 @@ L'eseguibile viene creato in `bin/Release/net8.0-windows10.0.17763.0/win-x64/pub
 
 Per una descrizione completa dello stato del progetto, consulta [WORK_HANDOFF.md](WORK_HANDOFF.md). Per la logica del timer, consulta [TIMER_LOGIC.md](TIMER_LOGIC.md).
 
-#English
+# English
 # Pomodorino
 
 A phased Pomodoro timer for Windows, developed in C# with WPF and .NET 8.
