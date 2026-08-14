@@ -1,3 +1,5 @@
+#Italian
+
 # Pomodorino
 
 Timer Pomodoro a fasi per Windows, sviluppato in C# con WPF e .NET 8.
@@ -20,3 +22,27 @@ dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=
 L'eseguibile viene creato in `bin/Release/net8.0-windows10.0.17763.0/win-x64/publish/Pomodorino.exe`.
 
 Per una descrizione completa dello stato del progetto, consulta [WORK_HANDOFF.md](WORK_HANDOFF.md). Per la logica del timer, consulta [TIMER_LOGIC.md](TIMER_LOGIC.md).
+
+#English
+# Pomodorino
+
+A phased Pomodoro timer for Windows, developed in C# with WPF and .NET 8.
+
+## Features
+
+- Configurable work and break phases.
+- Automatic stop at the end of each timer: the next phase starts only when **Start** is pressed.
+- Sound and Windows notification when each timer ends.
+- Settings saved locally.
+- Italian interface with an original pastel/anime theme.
+
+## Build and publishing
+
+```powershell
+dotnet build
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+```
+
+The executable is created at `bin/Release/net8.0-windows10.0.17763.0/win-x64/publish/Pomodorino.exe`.
+
+For a complete description of the project’s status, see [WORK_HANDOFF.md](WORK_HANDOFF.md). For the timer logic, see [TIMER_LOGIC.md](TIMER_LOGIC.md).
